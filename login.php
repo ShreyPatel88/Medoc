@@ -11,25 +11,25 @@ if (User::loggedIn()) {
 <head>
 	<title>LOGIN - <?php echo Config::SYSTEM_NAME; ?> </title>
 	<?php require_once "inc/head.inc.php";  ?>
+	<link rel="stylesheet" href="main.css">
+	<script src="https://kit.fontawesome.com/a021eb4f06.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
 	<?php require_once "inc/header.inc.php"; ?>
-	<div class='container-fluid'>
+	<div class='container-responsive'>
 		<div class='row'>
-			<div class='col-md-3'>
-				<img src='images/doc-background-two-right.png' class='img-responsive' />
-			</div> <!-- this should be a sidebar -->
-			<div class='col-md-9'>
+
+			<div class='login-image col-md-6 d-none d-md-flex bg-image nopadding'>
+			</div>
+			<div class='login col-md-6 nopadding'>
 				<div class='content-area'>
-					<div class='content-header'>
-						Login <small>Login to access the system</small>
-					</div>
+
 					<div class='content-body'>
 
 						<?php
 						if (isset($_GET['attempt'])) {
-							// STARTING THE LOGIN AREA 
+
 
 							$status = $_GET['attempt'];
 
@@ -39,9 +39,9 @@ if (User::loggedIn()) {
 								$header = "Login as a Doctor";
 							}
 
-							echo "<center><div class='badge-header'>$header</div></center>";
+							echo "<center><div class='t-header'>$header</div></center>";
 
-							// we created a method for creating forms
+
 
 							if (isset($_POST['login-email'])) {
 								$email = $_POST['login-email'];
@@ -65,25 +65,25 @@ if (User::loggedIn()) {
 								<div class='col-md-3'></div>
 							</div>
 						<?php
-							// ENDNG TGHE LOGIN AREA
+
 						} else {
 
 						?>
 
 							<center>
-								<div class='badge-header'>Login As:</div>
+								<div class=t-header>Log In to <span>Medoc</span> to continue</div>
 							</center>
 							<div class='row'>
 								<div class='col-md-2'></div>
 								<div class='col-md-8'>
-									<div class='row' style='margin-top: 70px;'>
+									<div class='row' style='margin-top: 30px;'>
 										<div class='col-md-4'>
 											<center>
 												<div class='img-login-icons'>
-													<img class='img-responsive' src='images/3678411 - hospital medical nurse.png' alt='login as a doctor' />
+													<img class='img-responsive' src='images/admin-icon.png' alt='login as a doctor' />
 												</div>
 												<center><a href='login.php?attempt=1'>
-														<div class='badge-header'>Admin</div>
+														<div class='badge-headerLogin'>Admin</div>
 													</a></center>
 
 											</center>
@@ -92,10 +92,10 @@ if (User::loggedIn()) {
 
 											<center>
 												<div class='img-login-icons'>
-													<img class='img-responsive' src='images/3678412 - doctor medical care medical help stethoscope.png' alt='login as a doctor' />
+													<img class='img-responsive' src='images/doctor-icon.png' alt='login as a doctor' />
 												</div>
 												<center><a href='login.php?attempt=2'>
-														<div class='badge-header'>Doctor</div>
+														<div class='badge-headerLogin'>Doctor</div>
 													</a></center>
 											</center>
 										</div>
@@ -104,24 +104,26 @@ if (User::loggedIn()) {
 
 											<center>
 												<div class='img-login-icons'>
-													<img class='img-responsive' src='images/3678443 - ambulance fast fast hospital.png' alt='login as a doctor' />
+													<img class='img-responsive' src='images/patient-icon.png' alt='login as a doctor' />
 												</div>
 												<center><a href='login-patient.php'>
-														<div class='badge-header'>Patient</div>
+														<div class='badge-headerLogin'>Patient</div>
 													</a></center>
 											</center>
 										</div>
 
 									</div>
 								</div>
-								<div class='col-md-2'></div>
+
 							<?php } ?>
-							</div><!-- end of the content area -->
+							</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
+
+
 </body>
 
 </html>

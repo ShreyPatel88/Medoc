@@ -20,8 +20,8 @@ if(!User::loggedIn()){
 			<div class='col-md-2'><?php require_once "inc/sidebar.inc.php"; ?></div> <!-- this should be a sidebar --> 
 			<div class='col-md-7'>
 				<div class='content-area'> 
-				<div class='content-header'> 
-					Add Patient <small>New patient? Add them here</small>
+				<div class='t-header'> 
+				<span>Add Patient - </span> New patient? Add them here
 				</div>
 				<?php require_once "inc/alerts.inc.php";  ?> 
 				<div class='content-body'>
@@ -102,10 +102,7 @@ if(!User::loggedIn()){
 				
 			</div><!-- col-md-7 --> 
 
-			<div class='col-md-3'>
-				<img src='images/doc-background-one.png' class='img-responsive' /> 
-			</div> <!-- this should be a sidebar -->
-				
+		
 		</div> 
 	</div> 
 </body>

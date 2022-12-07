@@ -18,7 +18,7 @@ if(!Patient::isPatientIn()){
 			<div class='col-md-2'><?php require_once "inc/sidebar.inc.php"; ?></div> <!-- this should be a sidebar --> 
 			<div class='col-md-7'>
 				<div class='content-area'> 
-				<div class='content-header'> 
+				<div class='t-header'> 
 					Sent Appointments <small>View your sent appointments</small>
 				</div>
 				<div class='content-body'> 
@@ -27,11 +27,7 @@ if(!Patient::isPatientIn()){
 				</div> 
 				
 			</div><!-- col-md-7 --> 
-
-			<div class='col-md-3'>
-				<img src='images/doc-background-one.png' class='img-responsive' /> 
-			</div> <!-- this should be a sidebar -->
-				
+		
 		</div> 
 	</div> 
 </body>

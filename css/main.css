@@ -1,187 +1,275 @@
-body{
-	background: #F5F5F5;
-	font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif !important;
-}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;600;700;800;900&display=swap');
 
-.navbar-brand{
-	margin: 0 0 20px 0 !important;
-	display: block;
-}
-
-.real-nav{
-	background: #fff;
-	border-bottom: 0px !important;
-	box-shadow: 0 2px 2px -2px gray !important;
-	border-radius: 0 !important;
-	z-index: 99;
-}
-
-.real-nav .navbar-nav li a{
-	color: #000;
-	font-weight: bold; 
-}
-
-.content-area{
-	background: #F5F5F5;
-	padding: 20px;
-}
-
-.content-header{
-	font-size: 25px;
-	color: black;
-	padding: 10px;
-	color: #207FDD;
-}
-
-.content-header small{
-	font-size: 15px;
-	color: #A3A49E;
-}
-
-.content-body{
-	background: url("../images/how-to-find-a-doctor-in-croatia.jpg") #fff;
-	background-size: cover; 
-	background-repeat: none; 
-	background-position: center center; 
-	padding: 10px; 
-	min-height: 300px;
-}
-
-.badge-header{
-	background: #207FDD;
-	display: inline-block;
-	padding: 5px 20px;
-	font-size: 20px;
-	border-radius: 5px; 
-	color: #fff;
-	margin: 10px 0;
-}
-
-.img-login-icons{
-	background: #fff; 
-	border: 1px solid #207FDD;
-	padding: 15px;
-	height: 120px;
-	border-radius: 60px;
-	width: 120px;
-}
-
-.form-holder{
-	padding: 10px 25px;
-	border: 3px solid #207FDD;
-	border-radius: 3px;
-	background: rgba(255, 255, 255, 0.7);
-}
-.sidebar{
-	position: relative;
+body {
+  background: #ffffff;
+  font-family: 'Montserrat', sans-serif;
 
 }
 
-.sidebar .sidebar-area{
-	z-index: 1;
-	position: fixed;
-	top: 50px;
-	background: #207FDD; 
-	width: 219px;
-	height: 100%;
-	padding: 100px 10px 10px 10px;
-	left: 0;
-	top: 0;
-	min-height: 500px;
+.login,
+.login-image{
+  min-height: 92.8vh;
 }
 
-.sidebar-menu{
-	padding: 0;
+
+.login-image {
+  background-image: url("../images/login-image.jpg");
+  background-size: cover;
+  background-position: center center;
 }
 
-.sidebar-menu li{
-	list-style-type: none;
+
+
+.navbar-brand {
+  margin: 0 0 20px 0 !important;
+  display: block;
 }
 
-.sidebar-menu li a{
-	color: #fff;
-	z-index: 999;
-	display: block;
-	text-decoration: none !important;
-	padding: 7px 15px;
-	font-size: 15px;
+.real-nav {
+  background: #0b150f;
+  border-bottom: 0px !important;
+  box-shadow: 0 2px 2px -2px gray !important;
+  border-radius: 0 !important;
+  z-index: 99;
+  border: 0;
+  margin: 0px;
 }
 
-.sidebar-menu li a:hover{
-	background: #F2711D; 
+.nopadding {
+  padding: 0 !important;
+  margin: 0 !important;
 }
 
-.sidebar-menu-icon{
-	margin-right: 10px;
+.real-nav .navbar-nav li a {
+  color: #000;
+  font-weight: bold;
 }
 
-.user-profile{
-	background: #fff; 
-	border: 1px solid #F2711D;
-	padding: 15px;
-	border-radius: 60px;
+.content-area {
+  background: #ffffff;
+  padding: 20px;
 }
 
-.user-names{
-	color: #FFFF02; 
-	font-weight: bold;
-	font-size: 17px;
-	margin: 20px 0px 5px 0px;
+.content-header {
+  font-size: 25px;
+  color: black;
+  padding: 10px;
+  color: #207fdd;
 }
 
-.user-role{
-	color: #FFF;
+.content-header small {
+  font-size: 15px;
+  color: #a3a49e;
 }
 
-.p-data div{
-	padding: 1px 0; 
-}
-.p-data div span{
-	border-bottom: 1px dotted #000;
-	display: inline-block;
-	color: #207fdd;
+.content-body {
+
+  background-size: cover;
+  background-repeat: none;
+  background-position: center center;
+  padding: 10px;
+  min-height: 300px;
 }
 
-.p-data .p-date{
-	font-weight: bold; 
-	font-size: 16px;
+.badge-header {
+  background: #0f0f0f;
+  display: inline-block;
+  padding: 6px 20px;
+  font-size: 17px;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  color: #fff;
+  margin: 10px 0;
 }
 
-.p-ref div{
-	padding: 10px 0 0 0;
-	font-weight: bolder; 
-	margin: 20px 0 0 0;
-	
+.badge-headerLogin{
+  width: 120px;
+  background: #0f0f0f;
+  display: inline-block;
+  padding: 6px 20px;
+  font-size: 17px;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  color: #fff;
+  margin: 10px 0;
+}
+
+
+.t-header{
+  display: inline-block;
+  padding: 5px 20px;
+  font-size: 25px;
+  font-weight: 500;
+  border-radius: 5px;
+  color: rgb(0, 0, 0);
+  margin: 10px 0;
+}
+
+.logout{
+  background-color: white;
+}
+
+.logout:hover{
+  background-color: #58FFC3;
+}
+
+.t-header span{
+  font-weight: 600;
+  color: #1F332C;
+}
+
+.img-login-icons {
+  background: #fff;
+  border: 1px solid #040907;
+  padding: 15px;
+  height: 120px;
+  border-radius: 10px;
+  width: 120px;
+}
+
+.form-holder {
+  padding: 10px 55px 30px 55px;
+  border-radius: 15px;
+  background: #ffffff;
+}
+.sidebar {
+  position: relative;
+}
+
+.sidebar .sidebar-area {
+  z-index: 1;
+  position: fixed;
+  top: 50px;
+  background: #0b150f;
+  width: 240px;
+  height: 100%;
+  padding: 100px 10px 10px 10px;
+  left: 0;
+  top: 0;
+  min-height: 500px;
+}
+
+.sidebar-menu {
+  padding: 0;
+}
+
+.sidebar-menu li {
+  list-style-type: none;
+  margin: 10px 0;
+}
+
+.sidebar-menu li a {
+  color: #fff;
+  z-index: 999;
+  display: block;
+  text-decoration: none !important;
+  padding: 7px 15px;
+  font-size: 15px;
+}
+
+.sidebar-menu li a:hover {
+  color: black;
+  background: #58FFC3;
+}
+
+.sidebar-menu-icon {
+  margin-right: 10px;
+  color: #58FFC3;
+}
+
+.user-profile {
+  height: 80px;
+  width: 80px;
+  background: #fff;
+  border: 1px solid #58FFC3;
+  padding: 15px 0 0 30px;
+  margin-left: 20px;
+  border-radius: 60px;
+  background-image: url("../images/userImage.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+
+.user-names {
+  color: #58FFC3;
+  font-weight: 500;
+  font-size: 17px;
+  padding: 20px 0 0 0;
+}
+
+.user-role {
+  color: #fff;
+  font-weight: 200;
+}
+
+.p-data div {
+  padding: 1px 0;
+}
+.p-data div span {
+  border-bottom: 1px dotted #000;
+  display: inline-block;
+  color: #207fdd;
+}
+
+.p-data .p-date {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.p-ref div {
+  padding: 10px 0 0 0;
+  font-weight: bolder;
+  margin: 20px 0 0 0;
 }
 
 .inner-panel {
-    border: 1px solid #207FDD;
-    padding: 10px;
-    border-radius: 5px;
-    text-align: center;
-	background: rgba(255, 255, 255, 0.8);
-	margin-bottom: 15px;
+  border: 1px solid #000000;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.8);
+  margin-bottom: 15px;
+  height: 125px;
 }
 
-.inner-panel h3{
-	font-size: 19px;
-	margin: 0 0 10px 0;
-	color: #207FDD;
-	font-weight: bold; 
+.inner-panel h3 {
+  font-size: 19px;
+  font-weight: 600;
+  margin: 0 0 10px 0;
+  color: #0c0c0c;
+
 }
 
-.inner-panel span{
-	color: #ED2124;
-	font-size: 35px; 
-	font-weight: bold;
+.inner-panel span {
+  color: #58FFC3;
+  font-size: 35px;
+  font-weight: bold;
 }
 
-.inner-panel a{
-	display: block;
-	font-size: 15px;
+.inner-panel a {
+  display: block;
+  font-size: 15px;
+  color: #000;
 }
 
-img[src='images/doc-background-one.png'],
-img[src='images/doc-background-two-right.png']{
-	margin-top: 50px;
+.newPatient{
+  margin-top: 50px;
+  padding:10px;
+  border: solid 1px black;
+  text-align: center;
+}
+
+.newPatient:hover{
+  background-color: rgb(247, 247, 247);
+}
+
+.newPatient a{
+  color: black;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+img[src="images/doc-background-one.png"],
+img[src="images/doc-background-two-right.png"] {
+  margin-top: 50px;
 }

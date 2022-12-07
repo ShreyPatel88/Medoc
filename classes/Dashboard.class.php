@@ -22,11 +22,6 @@ class Dashboard extends DashboardUi{ // using inheritance
 		return Db::count($query); 
 	}
 	
-	public static function hivPatients(){
-		$query = Db::fetch("hiv", "", "", "", "", "",  "");
-		return Db::count($query);
-	}
-	
 	public static function doctors(){
 		$query = Db::fetch("users", "", "status = ? ", "2", "", "",  "");
 		return Db::count($query);

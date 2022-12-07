@@ -45,10 +45,7 @@ if(!User::loggedIn()){
 				
 			</div><!-- col-md-7 --> 
 
-			<div class='col-md-3'>
-				<img src='images/doc-background-one.png' class='img-responsive' /> 
-			</div> <!-- this should be a sidebar -->
-				
+	
 		</div> 
 	</div> 
 </body>

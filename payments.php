@@ -18,8 +18,8 @@ if(!User::loggedIn()){
 			<div class='col-md-2'><?php require_once "inc/sidebar.inc.php"; ?></div> <!-- this should be a sidebar --> 
 			<div class='col-md-10'>
 				<div class='content-area'> 
-				<div class='content-header'> 
-					Payment Reports <small>Payment Reports</small>
+				<div class='ct-header'> 
+				<span>Payment Reports - </span>Payment Reports
 				</div>
 				<div class='content-body'> 
 					<?php Payment::load(); ?>

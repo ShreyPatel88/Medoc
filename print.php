@@ -25,8 +25,8 @@ require_once "importance.php";
 			<div class='col-md-2'><?php require_once "inc/sidebar.inc.php"; ?></div> <!-- this should be a sidebar --> 
 			<div class='col-md-7'>
 				<div class='content-area'> 
-				<div class='content-header'> 
-					Print <small>Print this patients receipt's for medicine collection</small>
+				<div class='t-header'> 
+				<span>Print - </span>	 Print this patients receipt's for medicine collection
 				</div>
 				<div class='content-body'> 
 					<?php Patient::printP($_GET['patient']); ?> 
@@ -35,10 +35,6 @@ require_once "importance.php";
 				
 			</div><!-- col-md-7 --> 
 
-			<div class='col-md-3'>
-				<img src='images/doc-background-one.png' class='img-responsive' /> 
-			</div> <!-- this should be a sidebar -->
-				
 		</div> 
 	</div> 
 </body>
