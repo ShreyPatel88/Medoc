@@ -21,10 +21,7 @@ if (Patient::isPatientIn()) {
 			<div class='col-md-2'><?php require_once "inc/sidebar.inc.php"; ?></div>
 			<div class='col-md-7'>
 				<div class='content-area'>
-					
-		
 					<div class='t-header'><span>Patient Log In</span></div>
-			
 					<div class='t-header'>Enter your Info to Access your information</div>
 					<div class='content-body'>
 						<div class='form-holder'><br /><br />
@@ -46,12 +43,8 @@ if (Patient::isPatientIn()) {
 							?>
 						</div>
 					</div>
-
 				</div>
-
 			</div>
-
-
 		</div>
 	</div>
 </body>

@@ -1,24 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;600;700;800;900&display=swap");
 
 body {
   background: #ffffff;
-  font-family: 'Montserrat', sans-serif;
-
+  font-family: "Montserrat", sans-serif;
 }
 
 .login,
-.login-image{
+.login-image {
   min-height: 92.8vh;
 }
-
 
 .login-image {
   background-image: url("../images/login-image.jpg");
   background-size: cover;
   background-position: center center;
 }
-
-
 
 .navbar-brand {
   margin: 0 0 20px 0 !important;
@@ -63,7 +59,6 @@ body {
 }
 
 .content-body {
-
   background-size: cover;
   background-repeat: none;
   background-position: center center;
@@ -82,7 +77,7 @@ body {
   margin: 10px 0;
 }
 
-.badge-headerLogin{
+.badge-headerLogin {
   width: 120px;
   background: #0f0f0f;
   display: inline-block;
@@ -94,8 +89,7 @@ body {
   margin: 10px 0;
 }
 
-
-.t-header{
+.t-header {
   display: inline-block;
   padding: 5px 20px;
   font-size: 25px;
@@ -105,17 +99,17 @@ body {
   margin: 10px 0;
 }
 
-.logout{
+.logout {
   background-color: white;
 }
 
-.logout:hover{
-  background-color: #58FFC3;
+.logout:hover {
+  background-color: #58ffc3;
 }
 
-.t-header span{
+.t-header span {
   font-weight: 600;
-  color: #1F332C;
+  color: #1f332c;
 }
 
 .img-login-icons {
@@ -169,19 +163,19 @@ body {
 
 .sidebar-menu li a:hover {
   color: black;
-  background: #58FFC3;
+  background: #58ffc3;
 }
 
 .sidebar-menu-icon {
   margin-right: 10px;
-  color: #58FFC3;
+  color: #58ffc3;
 }
 
 .user-profile {
   height: 80px;
   width: 80px;
   background: #fff;
-  border: 1px solid #58FFC3;
+  border: 1px solid #58ffc3;
   padding: 15px 0 0 30px;
   margin-left: 20px;
   border-radius: 60px;
@@ -191,7 +185,7 @@ body {
 }
 
 .user-names {
-  color: #58FFC3;
+  color: #58ffc3;
   font-weight: 500;
   font-size: 17px;
   padding: 20px 0 0 0;
@@ -237,11 +231,10 @@ body {
   font-weight: 600;
   margin: 0 0 10px 0;
   color: #0c0c0c;
-
 }
 
 .inner-panel span {
-  color: #58FFC3;
+  color: #58ffc3;
   font-size: 35px;
   font-weight: bold;
 }
@@ -252,18 +245,18 @@ body {
   color: #000;
 }
 
-.newPatient{
+.newPatient {
   margin-top: 50px;
-  padding:10px;
+  padding: 10px;
   border: solid 1px black;
   text-align: center;
 }
 
-.newPatient:hover{
+.newPatient:hover {
   background-color: rgb(247, 247, 247);
 }
 
-.newPatient a{
+.newPatient a {
   color: black;
   font-weight: 600;
   text-decoration: none;

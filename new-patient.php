@@ -17,7 +17,7 @@ if (!User::loggedIn()) {
 	<?php require_once "inc/header.inc.php"; ?>
 	<div class='container-fluid'>
 		<div class='row'>
-			<div class='col-md-2'><?php require_once "inc/sidebar.inc.php"; ?></div> <!-- this should be a sidebar -->
+			<div class='col-md-2'><?php require_once "inc/sidebar.inc.php"; ?></div>
 			<div class='col-md-7'>
 				<div class='content-area'>
 					<div class='t-header'>
@@ -46,9 +46,8 @@ if (!User::loggedIn()) {
 
 
 						</div>
-					</div><!-- end of the content area -->
+					</div>
 				</div>
-
 			</div>
 		</div>
 	</div>

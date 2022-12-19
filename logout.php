@@ -1,13 +1,13 @@
-<?php 
+<?php
 
-// start classes and other important data
+
 require_once "importance.php";
 
-// destroy all sessions
-@session_destroy(); 
 
-// reset the cookie
-setcookie("emr-user", $token ,time()-(60*60*24*7*30),"/", "","",TRUE);
+@session_destroy();
 
-// logout the user
+
+setcookie("emr-user", $token, time() - (60 * 60 * 24 * 7 * 30), "/", "", "", TRUE);
+
+
 Config::redir("login.php");

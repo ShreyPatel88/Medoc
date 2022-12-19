@@ -1,11 +1,14 @@
-<?php 
+<?php
 
-class SystemTime{
-	public static function getD($timestamp){ // getDate
+class SystemTime
+{
+	public static function getD($timestamp)
+	{
 		return strftime(date("d-m-Y", $timestamp));
 	}
-	
-	public static function getT($timestamp){ // gets time
-		return date("g:i a", $timestamp); 
+
+	public static function getT($timestamp)
+	{
+		return date("g:i a", $timestamp);
 	}
 }

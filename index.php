@@ -21,11 +21,10 @@ if (!User::loggedIn()) {
 			<div class='col-md-9'>
 				<div class='content-area'>
 					<div class='t-header'>
-					<span>Dashboard  -</span> View your dashboard
+						<span>Dashboard -</span> View your dashboard
 					</div>
 					<div class='content-body'>
 						<div class='row'>
-							<!-- <?php Dashboard::draw("Outbreaks", Dashboard::outbreaks(),  "outbreaks.php") ?> -->
 							<?php if ($userStatus == 1) {
 								Dashboard::draw("Doctors", Dashboard::doctors(),  "doctors-record.php");
 							} ?>
@@ -37,11 +36,7 @@ if (!User::loggedIn()) {
 						</div>
 					</div>
 				</div>
-
 			</div>
-
-
-
 		</div>
 	</div>
 </body>

@@ -22,22 +22,17 @@ if (User::loggedIn()) {
 				</div>
 				<ul class='sidebar-menu'>
 					<li><a href='index.php'><img class='sidebar-menu-icon' src='images/ic_account_balance_wallet_white_24dp.png' /> Dashboard</a></li>
-					<li><a href='profile.php?token=<?php echo $userToken; ?>'><img class='sidebar-menu-icon' src='images/ic_account_box_white_24dp.png' /> Profile</a></li>
+					<li><a href='profile.php?token=<?php echo $userToken; ?>'><img class='sidebar-menu-icon' src='images/ic_account_box_white_24dp.png' />Profile</a></li>
 					<li><a href='patients.php'><img class='sidebar-menu-icon' src='images/ic_assignment_ind_white_24dp.png' /> Patients Book</a></li>
 					<li><a href='add-doctors.php'><img class='sidebar-menu-icon' src='images/ic_group_add_white.png' /> Add Doctors</a></li>
 					<li><a href='doctors-record.php'><img class='sidebar-menu-icon' src='images/ic_group_add_white.png' /> Doctors' Records</a></li>
 					<li><a href='appointments.php'><img class='sidebar-menu-icon' src='images/ic_alarm_white_24dp.png' /> Appointment</a></li>
-					<!-- <li><a href='enquiry.php'><img class='sidebar-menu-icon' src='images/ic_help_outline_white_24dp.png'  /> Enquiry</a></li> -->
-					<!-- <li><a href='add-outbreak.php'><img class='sidebar-menu-icon' src='images/ic_group_work_white_24dp.png'  /> Add Outbreaks</a></li>
-				<li><a href='outbreaks.php'><img class='sidebar-menu-icon' src='images/ic_group_work_white_24dp.png'  /> Likely Outbreaks</a></li> -->
-					<!-- <li><a href='hiv.php'><img class='sidebar-menu-icon' src='images/ic_error_outline_white_24dp.png'  /> HIV</a></li>  -->
-					<!-- <li><a href='reports.php'><img class='sidebar-menu-icon' src='images/ic_receipt_white_24dp.png'  /> HIV Reports</a></li> -->
 					<li><a href='payments.php'><img class='sidebar-menu-icon' src='images/cash-multiple.png' /> Payment Reports</a></li>
 				</ul>
 			</div>
 		</div>
 	<?php
-		// END OF THE ADMIN
+
 	} else {
 	?>
 
@@ -65,10 +60,6 @@ if (User::loggedIn()) {
 					<li><a href='new-patient.php'><img class='sidebar-menu-icon' src='images/ic_group_add_white.png' /> Add Patient</a></li>
 					<li><a href='appointments.php'><img class='sidebar-menu-icon' src='images/ic_alarm_white_24dp.png' /> Appointment</a></li>
 					<li><a href='add-payment.php'><img class='sidebar-menu-icon' src='images/icons8-get-cash-50.png' width='24' /> Add Payment</a></li>
-					<!--<li><a href='enquiry.php'><img class='sidebar-menu-icon' src='images/ic_help_outline_white_24dp.png'  /> Enquiry</a></li>-->
-					<!-- <li><a href='outbreaks.php'><img class='sidebar-menu-icon' src='images/ic_group_work_white_24dp.png'  /> Likely Outbreaks</a></li> -->
-					<!-- <li><a href='hiv.php'><img class='sidebar-menu-icon' src='images/ic_error_outline_white_24dp.png'  /> HIV</a></li>
-				<li><a href='reports.php'><img class='sidebar-menu-icon' src='images/ic_receipt_white_24dp.png'  /> HIV Reports</a></li> -->
 				</ul>
 			</div>
 		</div>
@@ -89,7 +80,6 @@ if (User::loggedIn()) {
 					<div class='user-names'>
 						<?php echo Patient::getP($_SESSION['patient'], "name");  ?>
 					</div>
-
 					<div class='user-role'>
 						<?php echo "Patient";  ?>
 					</div>

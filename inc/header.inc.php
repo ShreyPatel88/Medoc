@@ -1,6 +1,6 @@
 <nav role="navigation" class="navbar navbar-default real-nav">
     <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
+
         <div class="navbar-header">
             <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
                 <span class="sr-only">Toggle navigation</span>
@@ -10,7 +10,7 @@
             </button>
             <a href="index.php" class="navbar-brand"><img src='images/Medoc-logo.svg' class='img-responsive img-logo' style="height: 50px; margin-bottom: 100px;" /></a>
         </div>
-        <!-- Collection of nav links and other content for toggling -->
+
         <div id="navbarCollapse" class="collapse navbar-collapse">
 
             <ul class="nav navbar-nav navbar-right">
@@ -20,8 +20,7 @@
                 <?php } else {
                 ?>
 
-                    <!-- <li><a href='profile.php?token=<?php $token; ?> '>Hello <?php echo $userFirstName . " " . $userSecondName; ?>,</a></li> -->
-                    <li class="logout"><a  href='logout.php'>Logout</a></li>
+                    <li class="logout"><a href='logout.php'>Logout</a></li>
                 <?php
                 } ?>
             </ul>

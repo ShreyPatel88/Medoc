@@ -1061,44 +1061,6 @@ $.fn.fieldSerialize = function(successful) {
     return $.param(a);
 };
 
-/**
- * Returns the value(s) of the element in the matched set.  For example, consider the following form:
- *
- *  <form><fieldset>
- *      <input name="A" type="text" />
- *      <input name="A" type="text" />
- *      <input name="B" type="checkbox" value="B1" />
- *      <input name="B" type="checkbox" value="B2"/>
- *      <input name="C" type="radio" value="C1" />
- *      <input name="C" type="radio" value="C2" />
- *  </fieldset></form>
- *
- *  var v = $('input[type=text]').fieldValue();
- *  // if no values are entered into the text inputs
- *  v == ['','']
- *  // if values entered into the text inputs are 'foo' and 'bar'
- *  v == ['foo','bar']
- *
- *  var v = $('input[type=checkbox]').fieldValue();
- *  // if neither checkbox is checked
- *  v === undefined
- *  // if both checkboxes are checked
- *  v == ['B1', 'B2']
- *
- *  var v = $('input[type=radio]').fieldValue();
- *  // if neither radio is checked
- *  v === undefined
- *  // if first radio is checked
- *  v == ['C1']
- *
- * The successful argument controls whether or not the field element must be 'successful'
- * (per http://www.w3.org/TR/html4/interact/forms.html#successful-controls).
- * The default value of the successful argument is true.  If this value is false the value(s)
- * for each element is returned.
- *
- * Note: This method *always* returns an array.  If no valid value can be determined the
- *    array will be empty, otherwise it will contain one or more values.
- */
 $.fn.fieldValue = function(successful) {
     for (var val=[], i=0, max=this.length; i < max; i++) {
         var el = this[i];
